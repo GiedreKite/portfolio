@@ -1,0 +1,11 @@
+.fade-in {
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 10%;
+    opacity: 0;
+    transition: opacity 5s ease-in; /* Adjust the timing for slower/faster effect */
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }

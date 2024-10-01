@@ -1,0 +1,77 @@
+/* main{
+    background: url(http://localhost:5173/back.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+} */
+ .container {
+  display: flex; /* Flexbox layout for placing image and text side by side */
+  align-items: center; /* Align items vertically center */
+  gap: 20px; /* Space between image and text */
+  padding: 20px;
+ }
+
+
+.textConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+
+
+.img {
+  flex: 1; 
+  max-width: 100%; /* Ensure the image scales properly */
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+
+.text {
+  flex: 2; /* Text takes up two parts of the available space */
+  font-family: Arial, sans-serif;
+}
+
+.text h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.text-container p {
+  font-size: 8rem;
+  justify-content: space-around;
+  word-spacing: 2rem;
+}
+
+
+.aline{
+    display: flex;
+    
+}
+
+
+.slidein {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+}
+
+/* animation-name: fadeInOut, moveLeft300px, bounce;
+animation-duration: 2.5s, 5s;
+animation-iteration-count: 2, 1; */
+
