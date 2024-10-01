@@ -1,0 +1,67 @@
+/* main{
+    background: url(http://localhost:5173/back.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+} */
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.textConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+
+
+.aline{
+    display: flex;
+    
+}
+.photo {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.slidein {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+}
+
+/* animation-name: fadeInOut, moveLeft300px, bounce;
+animation-duration: 2.5s, 5s;
+animation-iteration-count: 2, 1; */
+
+@keyframes card-spin {
+    from {
+      transform: rotate(-10deg);
+    }
+    to {
+      transform: rotate(10deg);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .photo {
+      animation: card-spin infinite 20s linear;
+    }
+  }

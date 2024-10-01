@@ -1,0 +1,64 @@
+header{
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  position: sticky!important;
+  top: 0!important;
+  height: 5rem!important;
+  background-color: rgba(0, 0, 0, 0.642);
+  margin: 0!important;
+  padding: 0!important;
+  width: 100%;
+}
+.link {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  color:grey;
+  text-decoration: none!important;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none!important;
+  gap: 3rem;
+  padding-right: 3rem;
+
+}
+
+.link:focus,.link:hover {
+  color: green!important;
+   text-decoration-color: darkcyan;
+}
+
+.mainHeader {
+
+  
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    height: 70px;
+}
+@keyframes card-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .img {
+      animation: card-spin infinite 20s linear;
+    }
+  }
+  /* header{
+    background: url(http://localhost:5173/back.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+} */

@@ -1,0 +1,179 @@
+/* main{
+    background: url(http://localhost:5173/back.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+} */
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.textConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+
+
+
+.aline{
+    display: flex;
+    
+}
+.photo {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.slidein {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timelineItem {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.timelineItem .left .timelineContent {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.timelineItem .right .timelineContent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.timelineContent {
+  display: flex;
+  position: relative;
+  width: 45%;
+  align-items: center;
+}
+
+.timelineLeft {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.timelineRight {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.timelineItem .timelineDate {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.timelineCircle {
+  position: absolute;
+  right: 0;
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #4CAF50;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background-color: #4CAF50;
+  z-index: 0;
+}
+
+.timeline h3, .timeline h4, .timeline p {
+  margin: 0;
+}
+
+.timeline h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.timeline h4 {
+  font-size: 16px;
+  color: #555;
+}
+
+.timeline p {
+  font-size: 14px;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .timelineItem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timelineLeft, .timelineRight {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .timelineContent {
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+}
+
+/* animation-name: fadeInOut, moveLeft300px, bounce;
+animation-duration: 2.5s, 5s;
+animation-iteration-count: 2, 1; */
+
+@keyframes card-spin {
+    from {
+      transform: rotate(-10deg);
+    }
+    to {
+      transform: rotate(10deg);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .photo {
+      animation: card-spin infinite 20s linear;
+    }
+  }
