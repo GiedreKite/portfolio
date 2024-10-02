@@ -20,6 +20,10 @@ const translations = {
       name: 'I am - ',
 
       contactMe: 'Please feel free to contact me:',
+      contactMe1: 'Phone number: ',
+      contactMe2: 'Socials: ',
+      contactMe3:'I will be waiting for your calls, messages or letters and I will be happy to answer all your questions.',
+
 
       aboutMe: 'I would like to introduce myself briefly to make our cooperation smoother and more efficient.',
       aboutMe1: "Hello, I was born and raised in the port city of Lithuania, Klaipėda, in a beautiful and large family.",
@@ -61,6 +65,9 @@ const translations = {
       name: 'Aš esu - ',
 
       contactMe: 'Maloniai kviečiu susisiekti su manimi:',
+      contactMe1: 'Telefono numeris: ',
+      contactMe2: 'Socialiniai tinklai: ',
+      contactMe3: 'Labai lauksiu Jūsų skambučių, žinučių ar laiškų ir mielai atsakysiu į visus Jūsų klausimus.',
 
       aboutMe: 'Norėčiau trumpai prisistatyti, kad mūsų bendradarbiavimas būtų sklandesnis ir efektyvesnis.',
       aboutMe1: 'Sveiki, gimiau ir užaugau Lietuvos uostamiestyje, Klaipėdoje, gražioje ir didelėje šeimoje.',

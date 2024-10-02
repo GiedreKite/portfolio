@@ -1,5 +1,6 @@
 .first{
-  background-color: yellow;
+  background-image: linear-gradient(to right, yellow, #4CAF50);
+
   padding: 0.25rem 0.5rem;
   font-size: 500;
   margin: 1rem;
@@ -7,7 +8,7 @@
   box-shadow: 0 0 0 0.5px white, 0 0 0 2px #4caf4fae;
 }
 .second{
-  background-color: #4CAF50;
+  background-image: linear-gradient(to right, #4CAF50,  yellow);
   padding: 0.25rem 0.5rem;
   font-size: 500;
   margin: 1rem;

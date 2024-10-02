@@ -13,7 +13,7 @@ export default function Footer() {
       
             <footer className={style.main}>
                 <p className="">&copy; 2024 Giedrė Narvilaitė</p>
-<h6>{title}</h6>
+<h6 className={style.yellow}>{title}</h6>
             </footer>
    
     );

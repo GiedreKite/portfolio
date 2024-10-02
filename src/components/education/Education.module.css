@@ -18,8 +18,9 @@
   }
   .text{
       color: black;
-      font-size: 2rem;
+      font-size: 1rem;
       padding: 2rem;
+      margin: 1rem;
   }
   
   
@@ -85,9 +86,11 @@
   }
   
   .timelineItem .timelineDate {
-    font-size: 14px;
+    font-size: 1rem;
     color: #999;
     margin-bottom: 5px;
+    padding: 2rem;
+    margin: 1rem;
   }
   
   .timelineCircle {
@@ -121,18 +124,24 @@
   }
   
   .timeline h3 {
-    font-size: 18px;
+    font-size: 1rem;
     margin-bottom: 5px;
+    padding: 2rem;
+    margin: 1rem;
   }
   
   .timeline h4 {
-    font-size: 16px;
+    font-size: 1rem;
     color: #555;
+    padding: 2rem;
+    margin: 1rem;
   }
   
   .timeline p {
-    font-size: 14px;
+    font-size: 1rem;
     color: #666;
+    padding: 1rem;
+    margin: 1rem;
   }
   @media (min-width: 360px) {
     .timelineItem {
@@ -174,4 +183,37 @@
       justify-content: center;
       padding: 20px;
     }
+      
+  .timeline h4 {
+    font-size: 2rem;
+    color: #555;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .timeline p {
+    font-size: 1.65rem;
+    color: #666;
+    padding: 1rem;
+    margin: 1rem;
+    
+  }
+  .text{
+    color: black;
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+.timeline h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  padding: 2rem;
+  margin: 1rem;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 2rem;
+  padding: 3rem 0;
+}
   }

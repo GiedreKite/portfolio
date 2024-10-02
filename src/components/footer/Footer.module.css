@@ -1,3 +1,7 @@
 .main {
     padding: 2rem;
 }
+.yellow:hover{
+    color: yellow;
+    font-size: 1rem;
+}

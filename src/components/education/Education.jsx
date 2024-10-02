@@ -25,8 +25,8 @@ const Education = () => {
         <div className={style.timelineItem }>
           <div className={style.timelineContent}>
             <div className={style.timelineLeft}>
-              <h4>"Baltic Institute of Technology"</h4>
-              <span className={style.timelineDate}>2024-04 -2024-09</span>
+              <h4>"BIT" Baltijos technologijų institutas   </h4>
+              <span className={style.timelineDate}>2024-04 2024-09</span>
             </div>
             <div className={style.timelineRight}>
               <p>{translations[language].edu1}</p>
@@ -37,8 +37,8 @@ const Education = () => {
         <div className={style.timelineItem }>
           <div className={style.timelineContent}>
             <div className={style.timelineLeft}>
-              <h4>"LAJM"</h4>
-              <span className={style.timelineDate}>2007-09 -2010-07</span>
+              <h4>"LAJM" Lietuvos aukštoji jūreivystės mokykla</h4>
+              <span className={style.timelineDate}>2007-09 2010-07</span>
             </div>
             <div className={style.timelineRight}>
               <p>{translations[language].edu2}</p>
@@ -50,7 +50,7 @@ const Education = () => {
           <div className={style.timelineContent}>
             <div className={style.timelineLeft}>
               <h4>"Ąžuolyno gimnazija"</h4>
-              <span className={style.timelineDate}>1999-09 -2007-06</span>
+              <span className={style.timelineDate}>1999-09 2007-06</span>
             </div>
             <div className={style.timelineRight}>
               <p>{translations[language].edu3}</p>

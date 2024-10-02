@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: "MyFont";
     src: url(./SellenaBrush-x3JyK.ttf)
-}
+} */
 * {
     margin: 0;
     padding: 0;
@@ -107,7 +107,7 @@ gap: 3rem;
     height: 30rem;
     width: 30rem;
     border-radius: 20px;
-    box-shadow: 0 0 10px #222;
+   
     position: absolute;
     top: 0;
     left: 0;
@@ -115,85 +115,34 @@ gap: 3rem;
     box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(255, 255, 0, 0.612);
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-family: 'MyFont';
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
     padding: 2rem;
 
-    transition: all 0.8s ease;
+    transition: all 0.99s ease;
 
 }
 
 .cf {
-    background-color: #4CAF50;
+    background-color: black;
+    color: #4CAF50;
+    
     
 }
 
 .cb {
     background-color: black;
     transform: rotateY(180deg);
+    color: yellow;
 }
 .card:hover .cf {
     transform: rotateY(180deg);
+    color: yellow;
 }
 .card:hover .cb {
     transform: rotateY(0deg);
 }
-
-.card:last-child .cb {
-    align-items: flex-end;
-}
-
-.card:last-child .cb img{
-    max-width: 100%;
-    min-width: 100%;
-    border-radius: 1rem;
-    transform: scale(0.1);
-    transition: all 0.8s ease;
-    transition-delay: 0.2s;
- }
-
-
- .card:last-child:hover .cb img{
-    transform: scale(1);
- }
- 
- 
-.card:nth-child(2) .cb {
-    align-items: center;
-}
-
-.card:nth-child(2) .cb img{
-    max-width: 100vh;
-    min-width: 10vh;
-    padding: 1rem;
-    transform: scale(0.1);
-    transition: all 0.8s ease;
-    transition-delay: 0.2s;
- }
-
-
- .card:nth-child(2):hover .cb img{
-    transform: scale(1);
- }
-
-  
-.card:first-child .cb {
-    align-items: center;
-}
-
-.card:first-child .cb img{
-    width: 100%;
-    height: 100%;
-    transform: scale(0.1);
-    transition: all 0.8s ease;
-    transition-delay: 0.2s;
-    border-radius: 1rem;
- }
-
-
- .card:first-child:hover .cb img{
-    transform: scale(1);
- }
