@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../language/LanguageContext'; 
-
+import style from './Footer.module.css'
 
 export default function Footer() {
     const { language, translations } = useContext(LanguageContext); 
@@ -11,7 +11,7 @@ export default function Footer() {
 
     return (
       
-            <footer className="">
+            <footer className={style.main}>
                 <p className="">&copy; 2024 Giedrė Narvilaitė</p>
 <h6>{title}</h6>
             </footer>

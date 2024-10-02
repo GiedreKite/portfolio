@@ -1,7 +1,8 @@
 
 
 import style from './MainPage.module.css';
-import photo from './photo.jpg'
+import photo from './img/photo.jpg';
+import logo from './img/logo.png';
 import Header from '../header/Header';
 import translations from '../language/translations.js';
 import Language from '../language/LanguageSwitcher.jsx'
@@ -25,9 +26,10 @@ import { LanguageContext } from '../language/LanguageContext';
       
         <main className={style.container}>
             <h1>{translations[language].welcome}</h1>
+            <img className={style.photo} src={logo} alt="photo" />
             <h3>{translations[language].description}</h3>
      <h3 className={style.name}>{translations[language].name} Giedrė Narvilaitė</h3>     
-     <img className={style.photo} src={photo} alt="photo" />
+     <img className={style.img} src={photo} alt="photo" />
 
         </main>
 

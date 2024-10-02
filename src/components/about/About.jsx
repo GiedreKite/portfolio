@@ -14,6 +14,7 @@ import bum from './img/bum.jpg';
 import Header from '../header/Header';
 import style from './About.module.css';
 import Photo from '../photo/Photo';
+import Footer from '../footer/Footer';
 
 
 export default function About() {
@@ -90,15 +91,8 @@ return(   <>
 <p>{translations[language].aboutMe8}</p>  
 
 </div>
-
-
-
-
-
-
-
-
 </div>
+<Footer/>
 
 </>
                 

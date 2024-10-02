@@ -29,11 +29,15 @@
     
 }
 .photo {
-    height: 400px;
-    width: 400px;
+    max-height: 400px;
+    max-width: 400px;
     border-radius: 50%;
 }
-
+.img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
 .slidein {
   animation-duration: 3s;
   animation-name: slidein;
@@ -54,14 +58,14 @@ animation-iteration-count: 2, 1; */
 
 @keyframes card-spin {
     from {
-      transform: rotate(-10deg);
+      transform: rotate(0deg);
     }
     to {
-      transform: rotate(10deg);
-    }
+      transform: rotate(360deg);
+    }   
   }
   @media (prefers-reduced-motion: no-preference) {
     .photo {
-      animation: card-spin infinite 20s linear;
+      animation: card-spin infinite 30s linear;
     }
   }
