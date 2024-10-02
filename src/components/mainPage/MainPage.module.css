@@ -16,18 +16,21 @@
     justify-content: center;
     text-align: center;
 }
-.text{
-    color: black;
+.name{
+ 
     font-size: 2rem;
     padding: 2rem;
 }
-
-
-
-.aline{
-    display: flex;
-    
+.welcome{
+  color: yellow;
+  padding: 2rem;
 }
+.description{
+  color: rgb(63, 131, 63);
+  padding: 2rem;
+}
+
+
 .photo {
     max-height: 400px;
     max-width: 400px;
@@ -36,25 +39,9 @@
 .img {
   height: 400px;
   width: 400px;
-  border-radius: 50%;
-}
-.slidein {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
+  border-radius: 10%;
 }
 
-@keyframes slidein {
-  from {
-    translate: 150vw 0;
-    scale: 200% 1;
-  }
-}
-
-/* animation-name: fadeInOut, moveLeft300px, bounce;
-animation-duration: 2.5s, 5s;
-animation-iteration-count: 2, 1; */
 
 @keyframes card-spin {
     from {
@@ -69,3 +56,4 @@ animation-iteration-count: 2, 1; */
       animation: card-spin infinite 30s linear;
     }
   }
+  
