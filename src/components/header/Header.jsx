@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../language/LanguageContext'; 
-
+import logo from './img/logo.png';
 import { Link } from 'react-router-dom'
 import style from './Header.module.css'
 import LanguageSwitcher from '../language/LanguageSwitcher';
@@ -13,7 +13,7 @@ export default function Header() {
     return (
             <header className="">
             
-                
+            <img className={style.img} src={logo} alt="logo" />
 
                         <Link to="/" className={style.link}>{translations[language].home}</Link>
                   

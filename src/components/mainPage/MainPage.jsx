@@ -11,6 +11,7 @@ import '../text/textLeft.css';
 import '../text/textRight.css';
 
 import { LanguageContext } from '../language/LanguageContext'; 
+import Photo from '../photo/Photo.jsx';
 
 
 
@@ -45,10 +46,15 @@ import { LanguageContext } from '../language/LanguageContext';
          
            
             </div>
-            <div className={style.container}>
-           
-     <h3 className={style.name}>{translations[language].name} Giedrė Narvilaitė</h3>     
-     <img className={style.img} src={photo} alt="photo" />
+            <div className={style.containerMe}>
+            <div className={style.description}>
+     <h3 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].name}</h3>  
+     </div>
+     <div className={style.welcome}>
+     <h3 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>Giedrė Narvilaitė</h3>     
+     </div>
+     <Photo src={photo} alt="My Photo" />
+    
             </div>
            
       

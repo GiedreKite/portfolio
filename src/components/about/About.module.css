@@ -19,10 +19,21 @@
     justify-content: center;
     text-align: center;
 }
-.text{
+.textY{
     font-size: 2rem;
     padding: 2rem;
 }
+.textG{
+  font-size: 2rem;
+  padding: 2rem;
+}
+.textY:hover{
+color: yellow;
+}
+.textG:hover{
+color: #4CAF50;
+}
+
 
 
 

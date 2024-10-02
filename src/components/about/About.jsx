@@ -29,7 +29,7 @@ return(   <>
   <div className={style.img}>
   <Photo src={moletai} alt="My Photo" />
   </div>
-  <div className={style.text}>
+  <div className={style.textY}>
   <p>{translations[language].aboutMe1}</p>  
    </div>
 
@@ -39,14 +39,14 @@ return(   <>
 </div>
 <div className={style.container}>
 
-<div className={style.text}>
+<div className={style.textG}>
 <p>{translations[language].aboutMe2}</p>  
 </div>
 <div className={style.img}>
 <Photo src={careme} alt="My Photo" />
 </div>
 
-<div className={style.text}>
+<div className={style.textG}>
 <p>{translations[language].aboutMe3}</p>  
 </div>
 </div>
@@ -55,7 +55,7 @@ return(   <>
 <Photo src={freetime} alt="My Photo" />
 </div>
 
-<div className={style.text}>
+<div className={style.textY}>
   <p>{translations[language].aboutMe4}</p>  
 </div>
 <div className={style.img}>
@@ -63,14 +63,14 @@ return(   <>
 </div>
 </div>
 <div className={style.container}>
-<div className={style.text}>
+<div className={style.textG}>
 <p>{translations[language].aboutMe5}</p>  
 </div>
 <div className={style.img}>
 <Photo src={freedom} alt="My Photo" />
 </div>
 
-<div className={style.text}>
+<div className={style.textG}>
 <p>{translations[language].aboutMe6}</p>  
 </div>
 </div>
@@ -79,7 +79,7 @@ return(   <>
 <Photo src={freee} alt="My Photo" />
 </div>
 
-<div className={style.text}>
+<div className={style.textY}>
 <p>{translations[language].aboutMe7}</p>  
 </div>
 <div className={style.img}>
@@ -87,7 +87,7 @@ return(   <>
 </div>
 </div>
 <div className={style.container}>
-<div className={style.text}>
+<div className={style.textG}>
 <p>{translations[language].aboutMe8}</p>  
 
 </div>
