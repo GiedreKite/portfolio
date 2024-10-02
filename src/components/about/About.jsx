@@ -15,6 +15,8 @@ import Header from '../header/Header';
 import style from './About.module.css';
 import Photo from '../photo/Photo';
 import Footer from '../footer/Footer';
+// import { Animated } from 'react-native';
+
 
 
 export default function About() {
@@ -93,6 +95,9 @@ return(   <>
 </div>
 </div>
 <Footer/>
+
+
+
 
 </>
                 

@@ -19,6 +19,8 @@ const translations = {
       description: "to my creative world! Every project here is part of my journey, and I'm glad you're a part of it now.",
       name: 'I am - ',
 
+      contactMe: 'Please feel free to contact me:',
+
       aboutMe: 'I would like to introduce myself briefly to make our cooperation smoother and more efficient.',
       aboutMe1: "Hello, I was born and raised in the port city of Lithuania, Klaipėda, in a beautiful and large family.",
       aboutMe2: ' I am the eldest and the only girl in the family, so I developed caring, empathy and the ability to help others from an early age.',
@@ -57,6 +59,8 @@ const translations = {
       welcome: "Sveiki atvykę",
       description: "į mano kūrybinį pasaulį! Kiekvienas projektas čia yra dalis mano kelionės, ir aš džiaugiuosi, kad dabar esate jos dalis.",
       name: 'Aš esu - ',
+
+      contactMe: 'Maloniai kviečiu susisiekti su manimi:',
 
       aboutMe: 'Norėčiau trumpai prisistatyti, kad mūsų bendradarbiavimas būtų sklandesnis ir efektyvesnis.',
       aboutMe1: 'Sveiki, gimiau ir užaugau Lietuvos uostamiestyje, Klaipėdoje, gražioje ir didelėje šeimoje.',
