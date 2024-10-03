@@ -37,6 +37,7 @@ useEffect(() => {
 return(   <>
 <Header/>
 
+<main>
 <div className={style.containerMe}>
             <div className={style.description}>
      <h3 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].name}</h3>  
@@ -47,9 +48,9 @@ return(   <>
      <Photo src={photo} alt="My Photo" />
     
             </div>
-            <br />
+  
 
-<h2 className={style.text}>{translations[language].aboutMe}</h2>  
+<h2 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>{translations[language].aboutMe}</h2>  
 <div className={style.container}>
      
   <div className={style.img}>
@@ -118,6 +119,9 @@ return(   <>
 
 </div>
 </div>
+</main>
+
+
 <Footer/>
 
 

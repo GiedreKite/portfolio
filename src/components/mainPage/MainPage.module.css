@@ -67,4 +67,53 @@ body {
       animation: card-spin infinite 30s linear;
     }
   }
-  
+  /* Styling for the container holding the image */
+.photoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Bouncing photo styling */
+.bouncingPhoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: bounce 7s infinite; /* Apply the bounce animation */
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Starting and ending point */
+  }
+  15% {
+    transform: translateY(50px); /* Moves the image up by 50px at midpoint */
+  }
+  25% {
+    transform: translateY(-50px); /* Moves the image up by 50px at midpoint */
+  }
+  35% {
+    transform: translateY(40px); /* Moves the image up by 50px at midpoint */
+  }
+  45% {
+    transform: translateY(-40px); /* Moves the image up by 50px at midpoint */
+  }
+  55% {
+    transform: translateY(30px); /* Moves the image up by 50px at midpoint */
+  }
+  65% {
+    transform: translateY(-30px); /* Moves the image up by 50px at midpoint */
+  }
+  75% {
+    transform: translateY(20px); /* Moves the image up by 50px at midpoint */
+  }
+  85% {
+    transform: translateY(-20px); /* Moves the image up by 50px at midpoint */
+  }
+  95% {
+    transform: translateY(10px); /* Moves the image up by 50px at midpoint */
+  }
+ 
+}

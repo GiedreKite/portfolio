@@ -24,26 +24,74 @@ const Work = () => {
         <main >
           <h1></h1>
      
-
-     <div className={style.timeline}>
-      {works.map((job) => (
-        <div
-          className={style.timelineItem }
-          key={job.id}
-        >
+          <div className={style.timeline}>
+        <div className={style.timelineItem }>
           <div className={style.timelineContent}>
             <div className={style.timelineLeft}>
-              <h3>{t.work.position}:{job.position}</h3>
-              <h4>{job.company}</h4>
-              <span className={style.timelineDate}>{t.work.startDate}: {job.startDate} - {t.work.endDate}: {job.endDate}</span>
+              <h4>"VMG Corp"</h4>
+              <p>{translations[language].work1}</p>
+              <span className={style.timelineDate}>2023-01 2024-01</span>
             </div>
             <div className={style.timelineRight}>
-              <p>{t.work.description}: {job.description}</p>
+              <p>{translations[language].work2}</p>
             </div>
-            <span className={style.timelineCircle}></span> {/* The circle point on the timeline */}
+            <span className={style.timelineCircle}></span> 
           </div>
         </div>
-      ))}
+        <div className={style.timelineItem }>
+          <div className={style.timelineContent}>
+            <div className={style.timelineLeft}>
+              <h4>"Vakarų apskaita"</h4>
+              <p>{translations[language].work1}</p>
+              <span className={style.timelineDate}>2022-07 2022-12</span>
+            </div>
+            <div className={style.timelineRight}>
+              <p>{translations[language].work3}</p>
+            </div>
+            <span className={style.timelineCircle}></span> 
+          </div>
+        </div>
+        <div className={style.timelineItem }>
+          <div className={style.timelineContent}>
+            <div className={style.timelineLeft}>
+              <h4>"Savitos transportas"</h4>
+              <p>{translations[language].work4}</p>
+              <span className={style.timelineDate}>2020-11 2022-07</span>
+            </div>
+            <div className={style.timelineRight}>
+              <p>{translations[language].work5}</p>
+            </div>
+            <span className={style.timelineCircle}></span> 
+          </div>
+        </div>
+        <div className={style.timelineItem }>
+          <div className={style.timelineContent}>
+            <div className={style.timelineLeft}>
+              <h4>"Santehkomplektas"</h4>
+              <p>{translations[language].work6}</p>
+              <span className={style.timelineDate}>2017-01 2020-03</span>
+            </div>
+            <div className={style.timelineRight}>
+              <p>{translations[language].work7}</p>
+            </div>
+            <span className={style.timelineCircle}></span> 
+          </div>
+        </div>
+
+        <div className={style.timelineItem }>
+          <div className={style.timelineContent}>
+            <div className={style.timelineLeft}>
+              <h4>"Komskaita"</h4>
+              <p>{translations[language].work4}</p>
+              <span className={style.timelineDate}>2013-09 2016-12</span>
+            </div>
+            <div className={style.timelineRight}>
+              <p>{translations[language].work8}</p>
+            </div>
+            <span className={style.timelineCircle}></span> 
+          </div>
+        </div>
+
     </div>
   
  

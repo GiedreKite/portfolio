@@ -1,19 +1,11 @@
 // src/workExperience.js
 const works = [
-    {
-        id: 1,
-        company: "Baltic Institute of Technology",
-        position: "Student",
-        startDate: "April 2024",
-        endDate: "September 2024",
-        description: 'I got some experience with: HTML, CSS, Javascript, ReactJs, ExpressJs and MySQL.',
-      },
+
       {
         id: 2,
         company: "VMG Corp",
         position: "Financial analyst",
-        startDate: "January 2023",
-        endDate: "January 2024",
+    
         description: "Creation of a business plan, preparation of budgets for the following year, preparation of loan and investment reports and their analysis. I had to learn how to use the Uipath program and create a robot for extracting information. My knowledge was applied, I created a robot for another department as well.",
       },
       {

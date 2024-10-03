@@ -40,7 +40,15 @@ const translations = {
       edu3: 'I studied at a prestigious high school, where high-level teachers work, helping to develop strong, responsible and well-prepared students.',
 
       work: '',
-      position: "Student",
+      work1: "Financial analyst",
+      work2: "Creation of a business plan, preparation of budgets for the following year, preparation of loan and investment reports and their analysis. I had to learn how to use the Uipath program and create a robot for extracting information. My knowledge was applied, I created a robot for another department as well.",
+      work3: "Calculation of salaries, submission to Sodra and VMI, submission of VAT declarations, preparation of balance - profit and loss reports, filling in bank requests. As well as bank reconciliation, writing invoices, entering invoices. Debt accounting. Acting director.",
+      work4: "Accountant",
+      work5: "Writing invoices, checking contracts.",
+      work6: "Financier",
+      work7: "Conclusion of contracts, compilation of primary documents, provision and analysis of data, reports to the management.",
+      work8: "I did all the work in the accounting company, from document compilation to statistics and others.",
+   
 
     
     
@@ -84,9 +92,15 @@ const translations = {
       edu3: 'Mokiausi prestižinėje gimnazijoje, kurioje dirba aukšto lygio mokytojai, padedantys ugdyti stiprius, atsakingus ir puikiai pasiruošusius moksleivius.',
 
       work: '',
-      position: "Studentė",
-
-
+      work1: "Finansų analitikė",
+      work2: "Verslo plano kūrimas, kitų metų biudžetų rengimas, paskolų ir investicijų ataskaitų rengimas ir jų analizė. Teko išmokti naudotis Uipath programa ir sukurti informacijos išgavimo robotą. Pritaikiau savo žinias, Sukūriau robotą ir kitam skyriui.",
+      work3: "Atlyginimų skaičiavimas, pateikimas Sodrai ir VMI, PVM deklaracijų teikimas, pelno nuostolių ataskaitų rengimas, banko užklausų pildymas. Taip pat bankinis, sąskaitų rašymas ir sąskaitų suvedimas. Buvau laikinai einanti direktoriaus pareigas. ",
+      work4: "Apskaitininkė",
+      work5: "Sąskaitų faktūrų išrašymas, sutarčių tikrinimas.",
+      work6: "Finansininkė",
+      work7: "Sutarčių sudarymas, pirminių dokumentų suvedimas, duomenų teikimas ir analizė, ataskaitos vadovybei.",
+      work8: "Buhalterinėje įmonėje vedžiau kelių įmonių apskaitą, pildžiau statistiką.",
+   
 
     
     

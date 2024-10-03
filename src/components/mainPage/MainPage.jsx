@@ -28,13 +28,18 @@ import Photo from '../photo/Photo.jsx';
       setVisible(true);
     }, 700); // Optional delay
   }, []);
+  
 
         return <>
         <Header/>
       
         <main>
             <div className={style.container}>
-            <img className={style.photo} src={logo} alt="logo" />
+
+            <div className={style.photoContainer}>
+        <img className={style.bouncingPhoto} src={logo} alt="logo" />
+    </div>
+          
             <div className={style.welcome}>
             <h1 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].welcome}</h1>
             </div>

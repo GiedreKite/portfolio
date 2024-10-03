@@ -23,6 +23,9 @@ export default function Contact() {
 
 return(   <>
 <Header/>
+<main>
+
+
 
 <div className={style.section1}>
    <div className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>
@@ -35,7 +38,7 @@ return(   <>
                <p className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>  Git
                </p>
          </div>
-            <div id="lietus" className={style.cb}>
+            <div className={style.cb}>
                <Photo src={git} alt="Git" />  
             </div>
         </div>
@@ -73,7 +76,7 @@ return(   <>
         </div>
         </div>
 
-
+        </main>
 
 <Footer/>
 

@@ -5,6 +5,14 @@
     background-size: cover;
     height: 100%;
 } */
+ main{
+  padding-top: 3rem;
+  display: flex; 
+  flex-direction: column;/* Flexbox layout for placing image and text side by side */
+  align-items: center; /* Align items vertically center */
+  gap: 20px; /* Space between image and text */
+  padding: 20px;
+ }
  .container {
   display: flex; /* Flexbox layout for placing image and text side by side */
   align-items: center; /* Align items vertically center */
@@ -29,12 +37,17 @@
 }
 .textY:hover{
 color: yellow;
+box-shadow: 0 5px 4px -4px yellow;
 }
 .textG:hover{
 color: #4CAF50;
+box-shadow: 0 5px 4px -4px #4CAF50;
+
 }
 
 .containerMe {
+  padding-top: 3rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
