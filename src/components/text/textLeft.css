@@ -1,14 +1,28 @@
 /* Slide in from the left */
 @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  25% {
+    transform: translateX(0);
+    color: #4CAF50;
+  }
+  50% {
+    transform: translateX(0);
+
+    color:  yellow;
+  }
+  75% {
+    transform: translateX(0);
+    color:  #4CAF50;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  
   
   /* Hidden state before animation */
   .hidden {

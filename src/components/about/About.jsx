@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+
+import React, { useContext, useState, useEffect } from 'react';
 
 import { LanguageContext } from '../language/LanguageContext'; 
 import free from './img/free.jpg';
@@ -10,6 +11,7 @@ import fre from './img/fre.jpg';
 import I from './img/I.jpg';
 import moletai from './img/moletai.jpg';
 import bum from './img/bum.jpg';
+import photo from './img/photo.jpg';
 
 import Header from '../header/Header';
 import style from './About.module.css';
@@ -22,9 +24,31 @@ import Footer from '../footer/Footer';
 export default function About() {
 const { language, translations } = useContext(LanguageContext); 
 
+      
+const [visible, setVisible] = useState(false);
+   
+
+useEffect(() => {
+  setTimeout(() => {
+    setVisible(true);
+  }, 700); // Optional delay
+}, []);
 
 return(   <>
 <Header/>
+
+<div className={style.containerMe}>
+            <div className={style.description}>
+     <h3 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].name}</h3>  
+     </div>
+     <div className={style.welcome}>
+     <h3 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>Giedrė Narvilaitė</h3>     
+     </div>
+     <Photo src={photo} alt="My Photo" />
+    
+            </div>
+            <br />
+
 <h2 className={style.text}>{translations[language].aboutMe}</h2>  
 <div className={style.container}>
      

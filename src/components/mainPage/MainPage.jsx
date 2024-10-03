@@ -9,7 +9,6 @@ import Language from '../language/LanguageSwitcher.jsx'
 import Footer from '../footer/Footer.jsx';
 import '../text/textLeft.css';
 import '../text/textRight.css';
-
 import { LanguageContext } from '../language/LanguageContext'; 
 import Photo from '../photo/Photo.jsx';
 
@@ -27,7 +26,7 @@ import Photo from '../photo/Photo.jsx';
   useEffect(() => {
     setTimeout(() => {
       setVisible(true);
-    }, 500); // Optional delay
+    }, 700); // Optional delay
   }, []);
 
         return <>
@@ -46,7 +45,7 @@ import Photo from '../photo/Photo.jsx';
          
            
             </div>
-            <div className={style.containerMe}>
+            {/* <div className={style.containerMe}>
             <div className={style.description}>
      <h3 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].name}</h3>  
      </div>
@@ -55,7 +54,7 @@ import Photo from '../photo/Photo.jsx';
      </div>
      <Photo src={photo} alt="My Photo" />
     
-            </div>
+            </div> */}
            
       
 

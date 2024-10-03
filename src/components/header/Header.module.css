@@ -33,7 +33,8 @@ header{
 
 .link:focus,.link:hover {
   color: #4CAF50!important;
-   text-decoration-color: darkcyan;
+  border: none;
+  box-shadow: 0 8px 10px -2px #4caf4fae;;
 }
 .img {
   max-width: 150px;

@@ -26,8 +26,8 @@ gap: 3rem;
 }
 
 .card {
-    height: 30rem;
-    width: 30rem;
+    height: 28rem;
+    width: 28rem;
 
     position: relative;
 
@@ -104,8 +104,8 @@ gap: 3rem;
 
 .cb, .cf {
     border: 1px solid #4CAF50;
-    height: 30rem;
-    width: 30rem;
+    height: 28rem;
+    width: 28rem;
     border-radius: 20px;
    
     position: absolute;
@@ -128,7 +128,10 @@ gap: 3rem;
 }
 
 .cf {
-    background-color: black;
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.126), #4caf4f20);
+    backdrop-filter: blur(100px);
+    box-shadow: 0 8px 32px rgba(255, 255, 0, 0.447);
+    
     color: #4CAF50;
     
     

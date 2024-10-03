@@ -34,7 +34,25 @@ color: yellow;
 color: #4CAF50;
 }
 
+.containerMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+ }
 
+
+.welcome{
+  font-family: "Signika Negative", sans-serif;
+  color: yellow;
+  padding: 2rem;
+}
+.description{
+  font-family: "Signika Negative", sans-serif;
+  color:  #4CAF50;
+  padding: 2rem;
+}
 
 
 

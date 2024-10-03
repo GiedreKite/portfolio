@@ -25,7 +25,8 @@ return(   <>
 <Header/>
 
 <div className={style.section1}>
-        <div className={style.card}>
+   <div className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>
+      <div className={style.card}>
             <div className={style.cf}>
                <p className={`text ${visible ? 'slide-in-right' : 'hidden'}`}> {translations[language].contactMe}
                </p>
@@ -35,10 +36,12 @@ return(   <>
                </p>
          </div>
             <div id="lietus" className={style.cb}>
-            <Photo src={git} alt="Git" />  
+               <Photo src={git} alt="Git" />  
             </div>
         </div>
-        <div className={style.card}>
+   </div>
+   <div className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>
+   <div className={style.card}>
             <div className={style.cf}>
             <p className={`text ${visible ? 'slide-in-right' : 'hidden'}`}> {translations[language].contactMe}
                </p>
@@ -52,6 +55,9 @@ return(   <>
             </div>
             
         </div>
+   </div>
+    
+   <div className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>
         <div className={style.card}>
             <div className={style.cf}>Giedrė Narvilaitė: <br /> 
              Email: giedre.narvilaite@gmail.com <br /> 
@@ -65,9 +71,11 @@ return(   <>
             <div className={style.cb}>  {translations[language].contactMe3} </div>
         </div>
         </div>
+        </div>
 
 
 
+<Footer/>
 
 
  
