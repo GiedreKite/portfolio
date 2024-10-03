@@ -46,7 +46,7 @@
 
 .timeline {
   position: relative;
-  max-width: 800px;
+  width: auto;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -212,7 +212,7 @@ margin: 1rem;
 }
 .timeline {
 position: relative;
-max-width: 1200px;
+width: auto;
 margin: 2rem;
 padding: 3rem 0;
 }
