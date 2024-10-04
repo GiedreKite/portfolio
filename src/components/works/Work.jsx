@@ -5,6 +5,9 @@ import { LanguageContext } from '../language/LanguageContext';
 import Header from '../header/Header';
 import style from './Work.module.css';
 import Footer from '../footer/Footer';
+import { ThemeContext } from '../themeContext/ThemeContext.jsx';
+import '../../App.css'
+
 
 
 
@@ -14,6 +17,7 @@ import works from './works';
 const Work = () => {
 
 
+  const { theme } = useContext(ThemeContext); // Get the current theme
       
     const { language, translations } = useContext(LanguageContext); 
     const t = translations[language];    
@@ -22,7 +26,7 @@ const Work = () => {
         
         return <>
                 <Header/>
-        <main >
+         <main className={`page ${theme}`}>
           <h1></h1>
      
           <div className={style.timeline}>

@@ -4,6 +4,9 @@ import { LanguageContext } from '../language/LanguageContext';
 import Header from '../header/Header';
 import style from './Education.module.css';
 import Footer from '../footer/Footer';
+import { ThemeContext } from '../themeContext/ThemeContext.jsx';
+import '../../App.css'
+
 
 
 
@@ -12,13 +15,14 @@ const Education = () => {
 
       
     const { language, translations } = useContext(LanguageContext); 
+    const { theme } = useContext(ThemeContext); // Get the current theme
         
    
 
         
         return <>
                 <Header/>
-        <main >
+         <main className={`page ${theme}`}>
           <h1></h1>
      
 

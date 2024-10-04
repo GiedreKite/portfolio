@@ -18,15 +18,16 @@ import style from './About.module.css';
 import Photo from '../photo/Photo';
 import Footer from '../footer/Footer';
 import { ThemeContext } from '../themeContext/ThemeContext';
-// import { Animated } from 'react-native';
+import '../../App.css'
 
 
 
 export default function About() {
 const { language, translations } = useContext(LanguageContext); 
-const { theme, toggleTheme } = useContext(ThemeContext);
+
       
 const [visible, setVisible] = useState(false);
+const { theme } = useContext(ThemeContext); // Get the current theme
    
 
 useEffect(() => {

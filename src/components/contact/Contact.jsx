@@ -7,6 +7,8 @@ import linkedin from './linkedin.png'
 import Header from '../header/Header';
 import Photo from '../photo/Photo';
 import Footer from '../footer/Footer';
+import { ThemeContext } from '../themeContext/ThemeContext.jsx';
+import '../../App.css'
 import '../text/textLeft.css';
 import '../text/textRight.css';
 
@@ -14,6 +16,7 @@ import '../text/textRight.css';
 export default function Contact() {
    const { language, translations } = useContext(LanguageContext); 
    const [visible, setVisible] = useState(false);
+   const { theme } = useContext(ThemeContext); // Get the current theme
    
 
    useEffect(() => {
@@ -24,7 +27,7 @@ export default function Contact() {
 
 return(   <>
 <Header/>
-<main>
+<main className={`page ${theme}`}>
 
 
 
