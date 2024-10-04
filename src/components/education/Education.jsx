@@ -6,6 +6,7 @@ import style from './Education.module.css';
 import Footer from '../footer/Footer';
 
 
+
 const Education = () => {
 
 

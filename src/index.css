@@ -11,9 +11,9 @@ body, html, :root  {
   align-items: center;
   color: white;
   text-align: center;
-  background: linear-gradient(-45deg, #000000, #0e220f, #000000, rgb(34, 34, 10),  #000000,  #0e220f, #000000, rgb(34, 34, 10), #000000); 
+  /* background: linear-gradient(-45deg, #000000, #0e220f, #000000, rgb(34, 34, 10),  #000000,  #0e220f, #000000, rgb(34, 34, 10), #000000); 
   background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite; 
+  animation: gradientAnimation 15s ease infinite;  */
 } 
 main {
   display: flex;

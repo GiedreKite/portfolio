@@ -10,6 +10,7 @@ import Footer from '../footer/Footer';
 import '../text/textLeft.css';
 import '../text/textRight.css';
 
+
 export default function Contact() {
    const { language, translations } = useContext(LanguageContext); 
    const [visible, setVisible] = useState(false);
