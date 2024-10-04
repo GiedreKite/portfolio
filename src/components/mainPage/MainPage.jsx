@@ -11,6 +11,8 @@ import '../text/textLeft.css';
 import '../text/textRight.css';
 import { LanguageContext } from '../language/LanguageContext'; 
 import Photo from '../photo/Photo.jsx';
+import { ThemeContext } from '../themeContext/ThemeContext.jsx';
+import '../../App.css'
 
 
 
@@ -21,6 +23,8 @@ import Photo from '../photo/Photo.jsx';
         const { language, translations } = useContext(LanguageContext); 
       
         const [visible, setVisible] = useState(false);
+        const { theme } = useContext(ThemeContext); // Get the current theme
+
    
 
   useEffect(() => {
@@ -33,7 +37,8 @@ import Photo from '../photo/Photo.jsx';
         return <>
         <Header/>
       
-        <main>
+        <main className={`page ${theme}`}>
+
             <div className={style.container}>
 
             <div className={style.photoContainer}>

@@ -10,6 +10,7 @@ import { LanguageProvider } from './components/language/LanguageContext';
 import LanguageSwitcher from './components/language/LanguageSwitcher';
 import OtherComponent from './components/language/OtherComponent';
 import Education from './components/education/Education';
+import { ThemeProvider } from './components/themeContext/ThemeContext';
 
 
 
@@ -19,7 +20,7 @@ export default function App() {
   return (
     
 <LanguageProvider>
-
+<ThemeProvider>
 
 <BrowserRouter>
       <Routes>
@@ -35,6 +36,7 @@ export default function App() {
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>
+    </ThemeProvider>
     </LanguageProvider>
 
   );

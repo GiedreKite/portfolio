@@ -17,13 +17,14 @@ import Header from '../header/Header';
 import style from './About.module.css';
 import Photo from '../photo/Photo';
 import Footer from '../footer/Footer';
+import { ThemeContext } from '../themeContext/ThemeContext';
 // import { Animated } from 'react-native';
 
 
 
 export default function About() {
 const { language, translations } = useContext(LanguageContext); 
-
+const { theme, toggleTheme } = useContext(ThemeContext);
       
 const [visible, setVisible] = useState(false);
    
@@ -37,7 +38,7 @@ useEffect(() => {
 return(   <>
 <Header/>
 
-<main>
+<main className={`page ${theme}`}>
 <div className={style.containerMe}>
             <div className={style.description}>
      <h3 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].name}</h3>  
