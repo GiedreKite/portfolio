@@ -6,6 +6,7 @@ import style from './Education.module.css';
 import Footer from '../footer/Footer';
 import { ThemeContext } from '../themeContext/ThemeContext.jsx';
 import '../../App.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -34,7 +35,9 @@ const Education = () => {
               <span className={style.timelineDate}>2024-04 2024-09</span>
             </div>
             <div className={style.timelineRight}>
-              <p>{translations[language].edu1}</p>
+              <p>{translations[language].edu1}
+              <Link to="/project" className={style.link}>{translations[language].projects}</Link>
+              </p>
             </div>
             <span className={style.timelineCircle}></span> 
           </div>

@@ -21,7 +21,7 @@ header{
   flex-wrap:wrap;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.795);
+  color: rgb(255, 255, 255);
   text-decoration: none!important;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ header{
 .link:focus,.link:hover {
   color: #4CAF50!important;
   border: none;
-  box-shadow: 0 8px 10px -2px #4caf4fae;;
+  box-shadow: 0 8px 10px -2px #4caf4fae;
 }
 .img {
   max-width: 150px;
