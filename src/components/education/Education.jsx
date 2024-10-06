@@ -23,7 +23,7 @@ const Education = () => {
         return <>
                 <Header/>
          <main className={`page ${theme}`}>
-          <h1></h1>
+          <h1 className={style.head}>{translations[language].edu}</h1>
      
 
      <div className={style.timeline}>

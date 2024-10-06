@@ -131,7 +131,8 @@ gap: 3rem;
 }
 
 .cf {
-    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.126), #4caf4f20);
+    background: rgba(0, 0, 0, 0.144); 
+    /* background-image: linear-gradient(to right, rgba(255, 255, 0, 0.126), #4caf4f20); */
     backdrop-filter: blur(100px);
     box-shadow: 0 8px 32px rgba(255, 255, 0, 0.447);
     

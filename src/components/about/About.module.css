@@ -38,10 +38,17 @@
 .textY:hover{
 color: yellow;
 box-shadow: 0 5px 4px -4px yellow;
+background: rgba(0, 0, 0, 0.222); 
+backdrop-filter: blur(1000px); 
+border-radius: 10%;
 }
 .textG:hover{
 color: #4CAF50;
+background: rgba(254, 254, 254, 0.222); 
+backdrop-filter: blur(1000px); 
+border-radius: 10%;
 box-shadow: 0 5px 4px -4px #4CAF50;
+
 
 }
 

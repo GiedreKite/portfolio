@@ -3,6 +3,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import style from './MainPage.module.css';
 import photo from './img/photo.jpg';
 import logo from './img/logo.png';
+import logoL from './img/logoL.png';
+
 import Header from '../header/Header';
 import translations from '../language/translations.js';
 import Language from '../language/LanguageSwitcher.jsx'
@@ -39,16 +41,20 @@ import '../../App.css'
       
         <main className={`page ${theme}`}>
 
+       
+
+
             <div className={style.container}>
 
             <div className={style.photoContainer}>
-        <img className={style.bouncingPhoto} src={logo} alt="logo" />
+        <img className={style.bouncingPhoto} src={logo}alt="logo" />
     </div>
           
-            <div className={style.welcome}>
+            <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-texty'}`}>
+         
             <h1 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].welcome}</h1>
             </div>
-            <div className={style.description}>
+            <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>
             <h1 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>{translations[language].description}</h1>
             </div>
            

@@ -6,12 +6,35 @@ body * {
 }
 /* Light mode */
 .page.light {
-  background-color: #f5f5f5;
+  background: linear-gradient(-45deg, #ffffff, rgb(251, 251, 191),  #ffffff, rgb(189, 248, 189),  #ffffff, rgb(251, 251, 191),  #ffffff, rgb(189, 248, 189) ); 
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; 
   color: #000;
+}
+.highlight-text.light-text {
+  color: #000000; 
+  /* backdrop-filter: blur(10px);  */
+  /* background: rgba(0, 0, 0, 0.144);  */
+  border-radius: 15px;
+  padding: 2rem;
 }
 
 /* Dark mode */
 .page.dark {
-  background-color: #333;
+  background: linear-gradient(-45deg, #000000, #0e220f, #000000, rgb(34, 34, 10),  #000000,  #0e220f, #000000, rgb(34, 34, 10), #000000); 
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; 
   color: #fff;
 }
+.highlight-text.dark-texty {
+  color: yellow;
+
+}
+
+.highlight-text.dark-textg {
+  color: #4CAF50;
+
+}
+
+
+

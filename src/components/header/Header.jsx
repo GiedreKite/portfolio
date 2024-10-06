@@ -1,10 +1,15 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../language/LanguageContext'; 
 import logo from './img/logo.png';
+import logoL from './img/logoL.png';
 import { Link } from 'react-router-dom'
 import style from './Header.module.css'
 import LanguageSwitcher from '../language/LanguageSwitcher';
 import { ThemeContext } from '../themeContext/ThemeContext';
+import ButtonG from '../animated/ButtonG';
+import ButtonY from '../animated/ButtonY';
+import ButtonD from '../animated/ButtonD';
+import ButtonL from '../animated/ButtonL';
 
 
 
@@ -13,8 +18,10 @@ export default function Header() {
     const { theme, toggleTheme } = useContext(ThemeContext);
     return (
             <header className={`header ${theme}`}>
-            
-            <img className={style.img} src={logo} alt="logo" />
+            <div >
+            <img className={style.img} src={theme === 'light' ? logoL : logo} alt="logo" />
+
+            </div>
 
                         <Link to="/" className={style.link}>{translations[language].home}</Link>
                   
@@ -30,8 +37,9 @@ export default function Header() {
 
       
       {/* Buttons to toggle theme */}
-      <button onClick={() => toggleTheme("light")}>Light Mode</button>
-      <button onClick={() => toggleTheme("dark")}>Dark Mode</button>
+      <ButtonD onClick={() => toggleTheme("dark")} text={translations[language].dark} />
+      <ButtonL onClick={() => toggleTheme("light")} text={translations[language].light} />
+     
                         <LanguageSwitcher/>
  
             </header>

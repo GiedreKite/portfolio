@@ -3,6 +3,9 @@ import { LanguageContext } from '../language/LanguageContext';
 
 import style from './Contact.module.css';
 import git from './git.png'
+import link from './link.svg'
+import gitH from './gitHub.svg'
+import gitW from './gitW.svg'
 import linkedin from './linkedin.png'
 import Header from '../header/Header';
 import Photo from '../photo/Photo';
@@ -25,6 +28,10 @@ export default function Contact() {
      }, 500); // Optional delay
    }, []);
 
+   const imageUrl = "https://example.com/photo.jpg"; // URL of the photo
+   const gitLink = "https://github.com/GiedreKite"; // URL to open when the photo is clicked
+   const linkedinLink = "https://www.linkedin.com/in/giedr%C4%97-narvilait%C4%97-759a54273/"; // URL to open when the photo is clicked
+
 return(   <>
 <Header/>
 <main className={`page ${theme}`}>
@@ -35,30 +42,48 @@ return(   <>
    <div className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>
       <div className={style.card}>
             <div className={style.cf}>
+               <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>
                <p className={`text ${visible ? 'slide-in-right' : 'hidden'}`}> {translations[language].contactMe}
                </p>
-               <br />
-
+               </div>
+               <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>
                <p className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>  Git
                </p>
+
+               </div>
          </div>
             <div className={style.cb}>
-               <Photo src={git} alt="Git" />  
+               <Photo src={git} alt="Git" /> 
+               <a href={gitLink} target="_blank" rel="noopener noreferrer">
+        <img src={gitW} alt="GitHub" style={{ width: '100px', height: 'auto' }} />
+      </a>
+
+
             </div>
         </div>
    </div>
    <div className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>
    <div className={style.card}>
             <div className={style.cf}>
-            <p className={`text ${visible ? 'slide-in-right' : 'hidden'}`}> {translations[language].contactMe}
+            <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>
+               <p className={`text ${visible ? 'slide-in-right' : 'hidden'}`}> {translations[language].contactMe}
                </p>
+               </div>
+           
                <br />
+               <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>
 
                <p className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>  Linkedin
                </p>
+               </div>
             </div>
             <div className={style.cb}>
             <Photo src={linkedin} alt="Linkedin" />
+
+            <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+        <img src={link} alt="Linkedin logo" style={{ width: '100px', height: 'auto' }} />
+      </a>
+
             </div>
             
         </div>
@@ -66,7 +91,11 @@ return(   <>
     
    <div className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>
         <div className={style.card}>
-            <div className={style.cf}>Giedrė Narvilaitė: <br /> 
+        <div className={style.cf}>
+        <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>{translations[language].contactMe3}
+         </div> 
+         </div>
+            <div className={style.cb}>Giedrė Narvilaitė: <br /> 
              Email: giedre.narvilaite@gmail.com <br /> 
              {translations[language].contactMe1}  <br /> 
              +370 67 669 034 <br /> 
@@ -75,7 +104,7 @@ return(   <>
              Linkedin - Giedrė Narvilaitė 
 
 </div>
-            <div className={style.cb}>  {translations[language].contactMe3} </div>
+           
         </div>
         </div>
         </div>

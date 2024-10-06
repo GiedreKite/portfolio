@@ -41,10 +41,10 @@ return(   <>
 
 <main className={`page ${theme}`}>
 <div className={style.containerMe}>
-            <div className={style.description}>
+<div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>
      <h3 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].name}</h3>  
      </div>
-     <div className={style.welcome}>
+     <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-texty'}`}>
      <h3 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>Giedrė Narvilaitė</h3>     
      </div>
      <Photo src={photo} alt="My Photo" />

@@ -7,6 +7,8 @@ const translations = {
       about: "About",
       projects: "Projects",
       education: "Education",
+      dark: "dark",
+      light: "light",
 
       work: "Work",
       workplaces: "Workplaces",
@@ -35,6 +37,7 @@ const translations = {
       aboutMe7: 'I sincerely believe that I can help others to move forward, overcome challenges and reach heights together.',
       aboutMe8: 'I hope my introduction helped us get to know each other better and will encourage further cooperation.',
       
+      edu: 'Below you will find information about my education.',
       edu1: 'I got some experience with: HTML, CSS, Javascript, ReactJs, ExpressJs and MySQL.',
       edu2: 'I acquired a solid foundation in financial analysis and learned to use professional programs effectively. Thanks to these skills, I successfully secured a job that aligns with my field of expertise.',
       edu3: 'I studied at a prestigious high school, where high-level teachers work, helping to develop strong, responsible and well-prepared students.',
@@ -64,6 +67,8 @@ const translations = {
       education: "Išsilavinimas",
       work: "Work",
       workplaces: 'Darbovietės',
+      dark: "tamsus",
+      light: "šviesus",
 
       footera: 'Kuo rimtesnis veidas, tuo nuostabesnė šypsena. – F. R. Šotabrianas.',
       footerb: 'Reikia nedaug, kad sukeltum šypseną, ir pakanka šypsenos, kad viskas taptų įmanoma. – Z. Sesbronas',
@@ -87,6 +92,7 @@ const translations = {
       aboutMe7: 'Nuoširdžiai tikiu, kad galiu padėti ir kitiems žengti į priekį, įveikti iššūkius ir drauge siekti aukštumų.',
       aboutMe8: 'Tikiuosi, mano prisistatymas padėjo mums geriau vieniems kitus pažinti ir skatins tolesnį bendradarbiavimą.',
 
+      edu: 'Žemiau rasite informaciją apie mano išsilavinimą',
       edu1: 'Įgavau patirties su: HTML, CSS, Javascript, ReactJs, ExpressJs ir MySQL.',
       edu2: 'Įgijau tvirtus finansų analizės pagrindus ir išmokau efektyviai naudotis profesinėmis programomis. Šių įgūdžių dėka sėkmingai radau darbą, atitinkantį mano specialybę.',
       edu3: 'Mokiausi prestižinėje gimnazijoje, kurioje dirba aukšto lygio mokytojai, padedantys ugdyti stiprius, atsakingus ir puikiai pasiruošusius moksleivius.',
