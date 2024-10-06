@@ -1,12 +1,6 @@
-/* main{
-    background: url(http://localhost:5173/back.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    height: 100%;
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
 body {
   font-family: "Signika Negative", sans-serif;
   font-optical-sizing: auto;
@@ -18,14 +12,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1rem;
  }
- .containerMe {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
- }
+
 
 
 .welcome{
@@ -85,35 +74,28 @@ body {
 
 /* Keyframes for the bounce animation */
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0); /* Starting and ending point */
+  0%, 100% { transform: translateY(0); }
+  15% { transform: translateY(50px); }
+  25% { transform: translateY(-50px); }
+  35% { transform: translateY(0); }
+  45% { transform: translateY(40px); }
+  55% { transform: translateY(-40px); }
+  65% { transform: translateY(0); }
+  75% { transform: translateY(30px); }
+  85% { transform: translateY(-30px); }
+  95% { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+
+  .welcome {
+    font-size: 0.5rem; /* Adjust font size for small screens */
+    padding: 1rem;
   }
-  15% {
-    transform: translateY(50px); /* Moves the image up by 50px at midpoint */
+
+  .description {
+    font-size: 0.5rem;
+    padding: 1rem;
   }
-  25% {
-    transform: translateY(-50px); /* Moves the image up by 50px at midpoint */
-  }
-  35% {
-    transform: translateY(0); /* Moves the image up by 50px at midpoint */
-  }
-  45% {
-    transform: translateY(40px); /* Moves the image up by 50px at midpoint */
-  }
-  55% {
-    transform: translateY(-40px); /* Moves the image up by 50px at midpoint */
-  }
-  65% {
-    transform: translateY(0); /* Moves the image up by 50px at midpoint */
-  }
-  75% {
-    transform: translateY(30px); /* Moves the image up by 50px at midpoint */
-  }
-  85% {
-    transform: translateY(-30px); /* Moves the image up by 50px at midpoint */
-  }
-  95% {
-    transform: translateY(0); /* Moves the image up by 50px at midpoint */
-  }
- 
+
 }

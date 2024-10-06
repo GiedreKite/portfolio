@@ -35,6 +35,21 @@ main {
   }
 }
 
-
+@media (max-width: 768px) {
+  p{
+    font-size: 1.5rem;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 368px) {
+  p{
+    font-size: 1rem;
+  }
+  h1{
+    font-size: 1rem;
+  }
+}
 
 

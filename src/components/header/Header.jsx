@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { LanguageContext } from '../language/LanguageContext'; 
 import logo from './img/logo.png';
 import logoL from './img/logoL.png';
@@ -16,10 +16,29 @@ import ButtonL from '../animated/ButtonL';
 export default function Header() {
     const { language, translations } = useContext(LanguageContext); 
     const { theme, toggleTheme } = useContext(ThemeContext);
+    
+    const [isMobile, setIsMobile] = useState(false);
+
+  // Custom Hook to detect screen width
+  const checkScreenSize = () => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+    
     return (
             <header className={`header ${theme}`}>
             <div >
-            <img className={style.img} src={theme === 'light' ? logoL : logo} alt="logo" />
+            {!isMobile && (<img className={style.img} src={theme === 'light' ? logoL : logo} alt="logo" />)}
 
             </div>
 

@@ -26,7 +26,23 @@ import '../../App.css'
       
         const [visible, setVisible] = useState(false);
         const { theme } = useContext(ThemeContext); // Get the current theme
+        const [isMobile, setIsMobile] = useState(false);
 
+        // Custom Hook to detect screen width
+        const checkScreenSize = () => {
+          if (window.innerWidth <= 768) {
+            setIsMobile(true);
+          } else {
+            setIsMobile(false);
+          }
+        };
+      
+        useEffect(() => {
+          checkScreenSize();
+          window.addEventListener('resize', checkScreenSize);
+      
+          return () => window.removeEventListener('resize', checkScreenSize);
+        }, []);
    
 
   useEffect(() => {
@@ -47,7 +63,7 @@ import '../../App.css'
             <div className={style.container}>
 
             <div className={style.photoContainer}>
-        <img className={style.bouncingPhoto} src={logo}alt="logo" />
+            {!isMobile && <img className={style.bouncingPhoto} src={logo}alt="logo" />}
     </div>
           
             <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-texty'}`}>
@@ -61,16 +77,7 @@ import '../../App.css'
          
            
             </div>
-            {/* <div className={style.containerMe}>
-            <div className={style.description}>
-     <h3 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].name}</h3>  
-     </div>
-     <div className={style.welcome}>
-     <h3 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>Giedrė Narvilaitė</h3>     
-     </div>
-     <Photo src={photo} alt="My Photo" />
-    
-            </div> */}
+
            
       
 

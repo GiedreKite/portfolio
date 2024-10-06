@@ -36,7 +36,7 @@ const Education = () => {
             </div>
             <div className={style.timelineRight}>
               <p>{translations[language].edu1}
-              <Link to="/project" className={style.link}>{translations[language].projects}</Link>
+              <Link to="/project" className={style.link}>   {translations[language].projects}</Link>
               </p>
             </div>
             <span className={style.timelineCircle}></span> 
