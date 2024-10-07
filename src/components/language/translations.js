@@ -52,7 +52,13 @@ const translations = {
       work7: "Conclusion of contracts, compilation of primary documents, provision and analysis of data, reports to the management.",
       work8: "I did all the work in the accounting company, from document compilation to statistics and others.",
    
-
+      pro: '',
+      pro1: '"I created the game Hanger, inspired by the horror movie Saw. I used the React library and the results are stored in LocalStorage so players can track their achievements. The game design is responsive, so it can be played comfortably on both PC and mobile devices. Just click the link to start the game and enjoy right away.”',
+      pro2: '',
+      pro3: '',
+      pro4: '',
+      pro5: '',
+      pro6: '',
     
     
     
@@ -108,7 +114,13 @@ const translations = {
       work8: "Buhalterinėje įmonėje vedžiau kelių įmonių apskaitą, pildžiau statistiką.",
    
 
-    
+      pro: '',
+      pro1: '„Sukūriau žaidimą „Pakaruoklis“, įkvėptą siaubo filmo „Pjūklas“. Naudojau React biblioteką, o rezultatai yra saugomi LocalStorage, kad žaidėjai galėtų sekti savo pasiekimus. Žaidimo dizainas yra responsyvus, todėl jį galima patogiai žaisti tiek kompiuteryje, tiek mobiliuosiuose įrenginiuose. Norėdami pradėti žaidimą, tiesiog spustelėkite nuorodą ir mėgaukitės iškart.“',
+      pro2: '',
+      pro3: '',
+      pro4: '',
+      pro5: '',
+      pro6: '',
     
     
     

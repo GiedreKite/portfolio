@@ -1,67 +1,129 @@
-/* main{
-    background: url(http://localhost:5173/back.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    height: 100%;
+/* @font-face {
+    font-family: "MyFont";
+    src: url(./SellenaBrush-x3JyK.ttf)
 } */
- .container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  padding-top: 3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section1 {
+
+color: black;
+min-height: 100vh;
+padding: 3rem;
+
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+gap: 3rem;
+}
+
+.card {
+  height: 38rem;
+  width: 28rem;
+
+  position: relative;
+
+  perspective: 90rem;
+}
+
+
+.cb, .cf {
+  border: 1px solid #4CAF50;
+  height: 38rem;
+  width: 28rem;
+  border-radius: 20px;
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(255, 255, 0, 0.612);
+
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
- }
-.textConteiner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.text{
-    color: black;
-    font-size: 2rem;
-    padding: 2rem;
+  justify-content: center;
+  font-family: 'MyFont';
+  font-size: 1.25rem;
+  font-weight: 900;
+  padding: 2rem;
+
+  transition: all 0.99s ease;
+
 }
 
-
-
-.aline{
-    display: flex;
-    
-}
-.photo {
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-}
-
-.slidein {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
+.cf {
+  background: rgba(0, 0, 0, 0.144); 
+  /* background-image: linear-gradient(to right, rgba(255, 255, 0, 0.126), #4caf4f20); */
+  backdrop-filter: blur(100px);
+  box-shadow: 0 8px 32px rgba(255, 255, 0, 0.447);
+  
+  color: #4CAF50;
+  
+  
 }
 
-@keyframes slidein {
-  from {
-    translate: 150vw 0;
-    scale: 200% 1;
+.cb {
+  background-color: black;
+  transform: rotateY(180deg);
+  color: yellow;
+  
+}
+.card:hover .cf {
+  transform: rotateY(180deg);
+  color: yellow;
+
+}
+.card:hover .cb {
+  transform: rotateY(0deg);
+
+}
+@media (max-width: 1200px) {
+  .card, .cf, .cb{
+      height: 38rem;
+      width: 28rem;
+  }
+  .section1{
+      padding: 2rem;
+      gap: 2rem;
   }
 }
 
-/* animation-name: fadeInOut, moveLeft300px, bounce;
-animation-duration: 2.5s, 5s;
-animation-iteration-count: 2, 1; */
 
-@keyframes card-spin {
-    from {
-      transform: rotate(-10deg);
+
+      @media (max-width: 768px) {        
+          .card, .cf, .cb{
+              height: 35rem;
+              width: 20rem;
+              font-size: 0.5rem;
+          }
+          .section1{
+              padding: 0.25rem;
+              gap: 2rem;
+          }
+          p{
+            font-size: 1rem;
+          }
+      }
+      @media (max-width: 368px) {        
+        .card, .cf, .cb{
+            height: 35rem;
+            width: 20rem;
+            font-size: 0.5rem;
+        }
+        .section1{
+            padding: 0.15rem;
+            gap: 1rem;
+        }
     }
-    to {
-      transform: rotate(10deg);
-    }
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    .photo {
-      animation: card-spin infinite 20s linear;
-    }
-  }
