@@ -56,4 +56,17 @@
     z-index: 1;
     color: black;  
   }
-  
+  @media (max-width: 1200px) {
+    .animatedBtn{
+       font-size: 0.75rem;
+       margin: 0.75rem;
+       padding: 0.15rem 0.2rem;
+     }
+     }
+     @media (max-width: 768px) {
+       .animatedBtn{
+          font-size: 0.75rem;
+          margin: 0.5rem;
+          padding: 0.1rem 0.15rem;
+        }
+        }

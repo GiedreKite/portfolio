@@ -99,3 +99,10 @@ body {
   }
 
 }
+
+@media (max-width: 1200px) {
+  .bouncingPhoto{
+    width: 150px;
+    height: 150px;
+  }
+}
