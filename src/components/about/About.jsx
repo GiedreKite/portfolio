@@ -28,7 +28,22 @@ const { language, translations } = useContext(LanguageContext);
       
 const [visible, setVisible] = useState(false);
 const { theme } = useContext(ThemeContext); // Get the current theme
-   
+const [isMobile, setIsMobile] = useState(false);
+
+const checkScreenSize = () => {
+  if (window.innerWidth <= 768) {
+    setIsMobile(true);
+  } else {
+    setIsMobile(false);
+  }
+};
+
+useEffect(() => {
+  checkScreenSize();
+  window.addEventListener('resize', checkScreenSize);
+
+  return () => window.removeEventListener('resize', checkScreenSize);
+}, []);
 
 useEffect(() => {
   setTimeout(() => {
@@ -47,23 +62,24 @@ return(   <>
      <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-texty'}`}>
      <h3 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>Giedrė Narvilaitė</h3>     
      </div>
-     <Photo src={photo} alt="My Photo" />
+     {!isMobile && ( <Photo src={photo} alt="My Photo" />)}
     
             </div>
   
-
-<h2 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>{translations[language].aboutMe}</h2>  
+<div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>
+<h1 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>{translations[language].aboutMe}</h1>  
+</div>
 <div className={style.container}>
      
   <div className={style.img}>
-  <Photo src={moletai} alt="My Photo" />
+  {!isMobile && ( <Photo src={moletai} alt="My Photo" />)}
   </div>
   <div className={style.textY}>
   <p>{translations[language].aboutMe1}</p>  
    </div>
 
 <div className={style.img}>
-<Photo src={I} alt="My Photo" />
+{!isMobile && (<Photo src={I} alt="My Photo" />)}
 </div>
 </div>
 <div className={style.container}>
@@ -72,7 +88,7 @@ return(   <>
 <p>{translations[language].aboutMe2}</p>  
 </div>
 <div className={style.img}>
-<Photo src={careme} alt="My Photo" />
+{!isMobile && (<Photo src={careme} alt="My Photo" />)}
 </div>
 
 <div className={style.textG}>
@@ -81,14 +97,14 @@ return(   <>
 </div>
 <div className={style.container}>
 <div className={style.img}>
-<Photo src={freetime} alt="My Photo" />
+{!isMobile && (<Photo src={freetime} alt="My Photo" />)}
 </div>
 
 <div className={style.textY}>
   <p>{translations[language].aboutMe4}</p>  
 </div>
 <div className={style.img}>
-<Photo src={fre} alt="My Photo" />
+{!isMobile && (<Photo src={fre} alt="My Photo" />)}
 </div>
 </div>
 <div className={style.container}>
@@ -96,7 +112,7 @@ return(   <>
 <p>{translations[language].aboutMe5}</p>  
 </div>
 <div className={style.img}>
-<Photo src={freedom} alt="My Photo" />
+{!isMobile && (<Photo src={freedom} alt="My Photo" />)}
 </div>
 
 <div className={style.textG}>
@@ -105,14 +121,14 @@ return(   <>
 </div>
 <div className={style.container}>
 <div className={style.img}>
-<Photo src={freee} alt="My Photo" />
+  {!isMobile && (<Photo src={freee} alt="My Photo" />)}
 </div>
 
 <div className={style.textY}>
 <p>{translations[language].aboutMe7}</p>  
 </div>
 <div className={style.img}>
-<Photo src={bum} alt="My Photo" />
+  {!isMobile && (<Photo src={bum} alt="My Photo" />)}
 </div>
 </div>
 <div className={style.container}>

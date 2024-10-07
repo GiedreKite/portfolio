@@ -19,7 +19,6 @@ export default function Header() {
     
     const [isMobile, setIsMobile] = useState(false);
 
-  // Custom Hook to detect screen width
   const checkScreenSize = () => {
     if (window.innerWidth <= 768) {
       setIsMobile(true);
