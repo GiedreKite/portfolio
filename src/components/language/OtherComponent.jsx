@@ -7,7 +7,7 @@ const OtherComponent = () => {
 
   return (
     <div>
-      <h2>{translations[language].description}</h2>
+      <h2>{ translations[language].description }</h2>
     </div>
   );
 };

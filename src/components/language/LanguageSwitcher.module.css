@@ -1,4 +1,4 @@
-.first{
+.first {
   background-image: linear-gradient(to right, yellow, #4CAF50);
 
   padding: 0.25rem 0.5rem;
@@ -7,8 +7,9 @@
   border-radius: 10%;
   box-shadow: 0 0 0 0.5px white, 0 0 0 2px #4caf4fae;
 }
-.second{
-  background-image: linear-gradient(to right, #4CAF50,  yellow);
+
+.second {
+  background-image: linear-gradient(to right, #4CAF50, yellow);
   padding: 0.25rem 0.5rem;
   font-size: 500;
   margin: 1rem;
@@ -16,12 +17,12 @@
   box-shadow: 0 0 0 0.5px white, 0 0 0 2px rgba(255, 255, 0, 0.612);
 }
 
-.first:hover{
+.first:hover {
   box-shadow: 0 0 0 0.5px white, 0 0 0 2px rgba(255, 255, 0, 0.612);
-background-color: rgba(255, 255, 0, 0.612);
+  background-color: rgba(255, 255, 0, 0.612);
 }
-.second:hover{
+
+.second:hover {
   box-shadow: 0 0 0 0.5px white, 0 0 0 2px #4caf4fae;
   background-color: #4caf4fae;
 }
-

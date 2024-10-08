@@ -14,10 +14,10 @@ const Photo = ({ src, alt }) => {
   }, []);
 
   return (
-    <img 
-      src={src} 
-      alt={alt} 
-      className={`fade-in ${isVisible ? 'visible' : ''}`} 
+    <img
+      src={ src }
+      alt={ alt }
+      className={ `fade-in ${isVisible ? 'visible' : ''}` }
     />
   );
 };

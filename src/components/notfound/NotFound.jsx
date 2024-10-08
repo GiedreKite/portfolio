@@ -12,7 +12,7 @@ export function NotFound() {
     return (
         <>
             <Header />
-             <main className={`page ${theme}`}>
+            <main className={ `page ${theme}` }>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

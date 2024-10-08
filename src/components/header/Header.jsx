@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { LanguageContext } from '../language/LanguageContext'; 
+import { LanguageContext } from '../language/LanguageContext';
 import logo from './img/logo.png';
 import logoL from './img/logoL.png';
 import { Link } from 'react-router-dom'
@@ -14,10 +14,10 @@ import ButtonL from '../animated/ButtonL';
 
 
 export default function Header() {
-    const { language, translations } = useContext(LanguageContext); 
-    const { theme, toggleTheme } = useContext(ThemeContext);
-    
-    const [isMobile, setIsMobile] = useState(false);
+  const { language, translations } = useContext(LanguageContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  const [isMobile, setIsMobile] = useState(false);
 
   const checkScreenSize = () => {
     if (window.innerWidth <= 768) {
@@ -33,33 +33,33 @@ export default function Header() {
 
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
-    
-    return (
-            <header className={`header ${theme}`}>
-            <div >
-            {!isMobile && (<img className={style.img} src={theme === 'light' ? logoL : logo} alt="logo" />)}
 
-            </div>
+  return (
+    <header className={ `header ${theme}` }>
+      <div >
+        { !isMobile && (<img className={ style.img } src={ theme === 'light' ? logoL : logo } alt="logo" />) }
 
-                        <Link to="/" className={style.link}>{translations[language].home}</Link>
-                  
-                        <Link to="/contact" className={style.link}>{translations[language].contact}</Link>
-                    
-                        <Link to="/about" className={style.link}>{translations[language].about}</Link>
-                   
-                        <Link to="/project" className={style.link}>{translations[language].projects}</Link>
+      </div>
 
-                        <Link to="/education" className={style.link}>{translations[language].education}</Link>
+      <Link to="/" className={ style.link }>{ translations[language].home }</Link>
 
-                        <Link to="/work" className={style.link}>{translations[language].workplaces}</Link>               
+      <Link to="/contact" className={ style.link }>{ translations[language].contact }</Link>
 
-      
-      {/* Buttons to toggle theme */}
-      <ButtonD onClick={() => toggleTheme("dark")} text={translations[language].dark} />
-      <ButtonL onClick={() => toggleTheme("light")} text={translations[language].light} />
-     
-                        <LanguageSwitcher/>
- 
-            </header>
-    );
+      <Link to="/about" className={ style.link }>{ translations[language].about }</Link>
+
+      <Link to="/project" className={ style.link }>{ translations[language].projects }</Link>
+
+      <Link to="/education" className={ style.link }>{ translations[language].education }</Link>
+
+      <Link to="/work" className={ style.link }>{ translations[language].workplaces }</Link>
+
+
+      {/* Buttons to toggle theme */ }
+      <ButtonD onClick={ () => toggleTheme("dark") } text={ translations[language].dark } />
+      <ButtonL onClick={ () => toggleTheme("light") } text={ translations[language].light } />
+
+      <LanguageSwitcher />
+
+    </header>
+  );
 }

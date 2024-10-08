@@ -11,7 +11,7 @@ import Language from '../language/LanguageSwitcher.jsx'
 import Footer from '../footer/Footer.jsx';
 import '../text/textLeft.css';
 import '../text/textRight.css';
-import { LanguageContext } from '../language/LanguageContext'; 
+import { LanguageContext } from '../language/LanguageContext';
 import Photo from '../photo/Photo.jsx';
 import { ThemeContext } from '../themeContext/ThemeContext.jsx';
 import '../../App.css'
@@ -21,75 +21,75 @@ import '../../App.css'
 
 
 
-    export default function MainPage() {
-        const { language, translations } = useContext(LanguageContext); 
-      
-        const [visible, setVisible] = useState(false);
-        const { theme } = useContext(ThemeContext); // Get the current theme
-        const [isMobile, setIsMobile] = useState(false);
+export default function MainPage() {
+  const { language, translations } = useContext(LanguageContext);
 
-        // Custom Hook to detect screen width
-        const checkScreenSize = () => {
-          if (window.innerWidth <= 768) {
-            setIsMobile(true);
-          } else {
-            setIsMobile(false);
-          }
-        };
-      
-        useEffect(() => {
-          checkScreenSize();
-          window.addEventListener('resize', checkScreenSize);
-      
-          return () => window.removeEventListener('resize', checkScreenSize);
-        }, []);
-   
+  const [visible, setVisible] = useState(false);
+  const { theme } = useContext(ThemeContext); // Get the current theme
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Custom Hook to detect screen width
+  const checkScreenSize = () => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
 
   useEffect(() => {
     setTimeout(() => {
       setVisible(true);
     }, 700); // Optional delay
   }, []);
-  
-
-        return <>
-        <Header/>
-      
-        <main className={`page ${theme}`}>
-
-       
 
 
-            <div className={style.container}>
+  return <>
+    <Header />
 
-            <div className={style.photoContainer}>
-            {!isMobile && <img className={style.bouncingPhoto} src={logo}alt="logo" />}
-    </div>
-          
-            <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-texty'}`}>
-         
-            <h1 className={`text ${visible ? 'slide-in-left' : 'hidden'}`}>{translations[language].welcome}</h1>
-            </div>
-            <div className={`highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}`}>
-            <h1 className={`text ${visible ? 'slide-in-right' : 'hidden'}`}>{translations[language].description}</h1>
-            </div>
-           
-         
-           
-            </div>
+    <main className={ `page ${theme}` }>
 
-           
-      
 
-        </main>
 
-        <Footer/>
-        
-        </>
-    
-    }
-   
-   
-  
-    
-    
+
+      <div className={ style.container }>
+
+        <div className={ style.photoContainer }>
+          { !isMobile && <img className={ style.bouncingPhoto } src={ logo } alt="logo" /> }
+        </div>
+
+        <div className={ `highlight-text ${theme === 'light' ? 'light-text' : 'dark-texty'}` }>
+
+          <h1 className={ `text ${visible ? 'slide-in-left' : 'hidden'}` }>{ translations[language].welcome }</h1>
+        </div>
+        <div className={ `highlight-text ${theme === 'light' ? 'light-text' : 'dark-textg'}` }>
+          <h1 className={ `text ${visible ? 'slide-in-right' : 'hidden'}` }>{ translations[language].description }</h1>
+        </div>
+
+
+
+      </div>
+
+
+
+
+    </main>
+
+    <Footer />
+
+  </>
+
+}
+
+
+
+
+

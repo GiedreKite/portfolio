@@ -18,25 +18,25 @@ import { ThemeProvider } from './components/themeContext/ThemeContext';
 
 export default function App() {
   return (
-    
-<LanguageProvider>
-<ThemeProvider>
 
-<BrowserRouter>
-      <Routes>
-      
-        <Route path='/' element={<MainPage />}></Route>
-        <Route path='/contact' element={<Contact/>}></Route>
+    <LanguageProvider>
+      <ThemeProvider>
 
-        <Route path='/about' element={<About/>}></Route>
-        <Route path='/education' element={<Education/>}></Route>
-        <Route path='/project' element={<Project />}></Route>
-        <Route path='/work' element={<Work />}></Route>
-        
-        <Route path='*' element={<NotFound />}></Route>
-      </Routes>
-    </BrowserRouter>
-    </ThemeProvider>
+        <BrowserRouter>
+          <Routes>
+
+            <Route path='/' element={ <MainPage /> }></Route>
+            <Route path='/contact' element={ <Contact /> }></Route>
+
+            <Route path='/about' element={ <About /> }></Route>
+            <Route path='/education' element={ <Education /> }></Route>
+            <Route path='/project' element={ <Project /> }></Route>
+            <Route path='/work' element={ <Work /> }></Route>
+
+            <Route path='*' element={ <NotFound /> }></Route>
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </LanguageProvider>
 
   );
