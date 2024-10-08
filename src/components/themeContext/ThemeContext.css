@@ -12,7 +12,7 @@
   /* Light mode styles */
   .Light.light {
     background: linear-gradient(-45deg, #fdfdfd, #c6ffc9, #fcfcfc, rgb(248, 248, 177),  #fdfdfd, #c6ffc9, #fcfcfc, rgb(248, 248, 177)); 
-    background-size: 400% 400%;
+    background-size: 1000% 1000%;
     animation: gradientAnimation 15s ease infinite; 
     color: #000000;
   }
@@ -22,7 +22,7 @@
   /* Dark mode styles */
   .Light.dark {
     background: linear-gradient(-45deg, #000000, #0e220f, #000000, rgb(34, 34, 10),  #000000,  #0e220f, #000000, rgb(34, 34, 10), #000000); 
-    background-size: 400% 400%;
+    background-size: 1000% 1000%;
     animation: gradientAnimation 15s ease infinite; 
     color: #ffffff;
   }
