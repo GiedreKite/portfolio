@@ -49,9 +49,9 @@ export default function Header() {
 
       <Link to="/portfolioEng/project" className={ style.link }>{ translations[language].projects }</Link>
 
-      <Link to="portfolioEng/education" className={ style.link }>{ translations[language].education }</Link>
+      <Link to="/portfolioEng/education" className={ style.link }>{ translations[language].education }</Link>
 
-      <Link to="portfolioEng/work" className={ style.link }>{ translations[language].workplaces }</Link>
+      <Link to="/portfolioEng/work" className={ style.link }>{ translations[language].workplaces }</Link>
 
 
       {/* Buttons to toggle theme */ }
