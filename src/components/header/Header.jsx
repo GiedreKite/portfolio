@@ -41,7 +41,7 @@ export default function Header() {
 
       </div>
 
-      <Link to="/*" className={ style.link }>{ translations[language].home }</Link>
+      <Link to="/portfolioEng/" className={ style.link }>{ translations[language].home }</Link>
 
       <Link to="/portfolioEng/contact" className={ style.link }>{ translations[language].contact }</Link>
 
