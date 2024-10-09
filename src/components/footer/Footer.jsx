@@ -17,7 +17,7 @@ export default function Footer() {
     return (
 
         <footer className={ style.footer }>
-            <p className="">&copy; 2024 Giedrė Narvilaitė</p>
+            <h6 className={ style.yellow }>&copy; 2024 Giedrė Narvilaitė</h6>
             <h6 className={ style.yellow }>{ title }</h6>
         </footer>
 
