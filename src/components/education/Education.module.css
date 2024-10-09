@@ -169,11 +169,12 @@
     box-shadow: 0 8px 10px -2px #4caf4fae;
   }
 
-  p:hover {
+  .timelineRight:focus,
+  .timelineRight:hover {
     background: rgba(254, 254, 254, 0.222);
-    backdrop-filter: blur(1000px);
+    backdrop-filter: blur(1000px) !important;
     border-radius: 10%;
-    box-shadow: 0 5px 4px -4px #4CAF50;
+    box-shadow: 0 5px 4px -4px #4CAF50 !important;
   }
 
 }
@@ -287,5 +288,14 @@
     width: auto;
     margin: 2rem;
     padding: 3rem 0;
+  }
+
+
+  .timelineRight:focus,
+  .timelineRight:hover {
+    background: rgba(254, 254, 254, 0.222);
+    backdrop-filter: blur(1000px) !important;
+    border-radius: 10%;
+    box-shadow: 0 3px 2px -2px #4CAF50 !important;
   }
 }
