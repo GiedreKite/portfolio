@@ -116,6 +116,13 @@ p {
 
 }
 
+.name:hover {
+  background: rgba(254, 254, 254, 0.222);
+  backdrop-filter: blur(1000px) !important;
+  border-radius: 10%;
+  box-shadow: 0 3px 2px -2px #4CAF50 !important;
+}
+
 @media (max-width: 1200px) {
 
   .card,
@@ -161,6 +168,13 @@ p {
   .name {
     font-size: 1.55rem;
     margin: 2rem;
+  }
+
+  .name:hover {
+    background: rgba(254, 254, 254, 0.222);
+    backdrop-filter: blur(1000px) !important;
+    border-radius: 10%;
+    box-shadow: 0 3px 2px -2px #4CAF50 !important;
   }
 }
 
