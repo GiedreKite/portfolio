@@ -25,13 +25,13 @@ export default function App() {
         <BrowserRouter>
           <Routes>
 
-            <Route path='/home' element={ <MainPage /> }></Route>
-            <Route path='/contact' element={ <Contact /> }></Route>
+            <Route path='/*' element={ <MainPage /> }></Route>
+            <Route path='/portfolioEng/contact' element={ <Contact /> }></Route>
 
-            <Route path='/about' element={ <About /> }></Route>
-            <Route path='/education' element={ <Education /> }></Route>
-            <Route path='/project' element={ <Project /> }></Route>
-            <Route path='/work' element={ <Work /> }></Route>
+            <Route path='/portfolioEng/about' element={ <About /> }></Route>
+            <Route path='/portfolioEng/education' element={ <Education /> }></Route>
+            <Route path='/portfolioEng/project' element={ <Project /> }></Route>
+            <Route path='/portfolioEng/work' element={ <Work /> }></Route>
 
 
           </Routes>
