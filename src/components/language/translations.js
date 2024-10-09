@@ -64,6 +64,16 @@ const translations = {
     work8:
       "I did all the work in the accounting company, from document compilation to statistics and others.",
 
+    workskill:
+      "I have accumulated strong problem-solving skills that help me consistently overcome challenges and offer innovative solutions. My communication and teamwork skills allow me to collaborate effectively, share knowledge and achieve common goals together. I am also excellent at reading and interpreting electronic schematics and documentation, which allows to successfully integrate software with hardware.",
+    workskill1: 'I learned how to lead a team as a leader, not as a director, inspiring team members and showing that we are all working towards a common goal, walking together in unison next to each other. Without the previously acquired communication and documentation management skills, it would not have been possible to achieve these goals.',
+    workskill2: 'My work style is analytical and responsible, complemented by a friendly and open personality that allows me to feel great in a team environment. In this job, I gained valuable experience in working in a team and cooperating with colleagues. I am happy to have the opportunity to apply my competences and improve them every day. These skills allow me to write clean, maintainable code and always pay close attention to detail. My good knowledge of the English language, both in communication and in the preparation of documentation, allows me to effectively contribute to the implementation of projects.', 
+    workskill3: 'I am well versed in modern web development practices and have initial experience with frameworks such as React, which provides a solid foundation in web technologies. I am constantly motivated to deepen my knowledge and adapt to new technologies. The next plans are to further develop and learn the PHP programming language.',
+    workskill4: 'In this job, I gained valuable skills, such as careful work with documentation, attention to details, and the ability to work effectively in a team. I also learned how to strategically plan work, which is especially important in accounting, where accuracy and planning are key success factors.',
+    workskill5: 'In this job, I improved my already acquired competences, careful work with documentation and the ability to notice small details. I also developed effective teamwork and strategic work planning, as precision and advance planning are key factors for success.',
+    workskill6: 'While studying in this field, I learned to independently search for the necessary documentation, follow the news and constantly improve as a specialist. As the tax system changes rapidly, the ability to adapt and keep up with innovation is critical.',
+    workskill7: "During my studies, I gained valuable skills that fostered curiosity, a broad worldview, and an openness to innovation. The school's high standards and strict discipline helped to firmly develop these qualities and achieve the set goals.",
+    
     pro: "On this page, I want to share the projects and web pages that I have created with the help of the accumulated knowledge. I invite you to rate, try and have a pleasant browsing experience.",
     pro1: "I created the game Hanger, inspired by the horror movie Saw. I used the React library and the results are stored in LocalStorage so players can track their achievements. The game design is responsive, so it can be played comfortably on both PC and mobile devices. Just click the link to start the game and enjoy right away.",
     pro2: "",
@@ -137,28 +147,21 @@ const translations = {
     work8:
       "Buhalterinėje įmonėje vedžiau kelių įmonių apskaitą, pildžiau statistiką.",
 
+    workskill:
+      "Esu sukaupusi stiprius problemų sprendimo įgūdžius, kurie padeda nuosekliai įveikti iššūkius ir pasiūlyti naujoviškus sprendimus. Mano bendravimo ir komandinio darbo gebėjimai leidžia efektyviai bendradarbiauti, dalytis žiniomis ir kartu siekti bendrų tikslų. Taip pat puikiai moku skaityti ir interpretuoti elektronines schemas bei dokumentaciją, kas leidžia sėkmingai integruoti programinę įrangą su technine įranga.",
+    workskill1:
+      "Išmokau vadovauti komandai kaip lyderė, o ne kaip direktorė, įkvėpdama komandos narius ir parodydama, kad visi siekiame bendro tikslo, žengdami vieningu žingsniu šalia vieni kitų. Be anksčiau įgytų bendravimo ir dokumentacijos valdymo įgūdžių, nebūtų pavykę pasiekti šių tikslų.",
+    workskill2:
+      "Mano darbo stilius pasižymi analitiškumu ir atsakingumu, kurį papildo draugiška ir atvira asmenybė, leidžianti puikiai jaustis komandinėje aplinkoje. Šiame darbe sukaupiau vertingos patirties dirbant komandoje ir bendradarbiaujant su kolegomis. Džiaugiuosi galimybe pritaikyti turimas kompetencijas bei tobulinti jas kasdien. Dėl šių įgūdžių gebu rašyti švarų, lengvai prižiūrimą kodą ir visuomet didelį dėmesį skiriu detalėms. Mano geros anglų kalbos žinios, tiek bendraujant, tiek rengiant dokumentaciją, leidžia efektyviai prisidėti prie projektų įgyvendinimo.",
+    workskill3:
+      "Puikiai išmanau šiuolaikines žiniatinklio kūrimo praktikas bei turiu pradinės patirties dirbant su sistemomis, tokiomis kaip React, kas suteikia tvirtą pagrindą žiniatinklio technologijose. Esu nuolat motyvuota gilinti savo žinias ir prisitaikyti prie naujų technologijų. Artimiausiuose planuose yra toliau tobulėti ir mokytis PHP programavimo kalbos.",
+    workskill4: 'Šiame darbe įgijau vertingų įgūdžių, tokių kaip kruopštus darbas su dokumentacija, smulkmenų pastebėjimas bei gebėjimas efektyviai dirbti komandoje. Taip pat išmokau strategiškai planuoti darbus, kas ypač svarbu buhalterijoje, kur tikslumas ir planavimas yra pagrindiniai sėkmės veiksniai.',
+    workskill5: 'Šiame darbe tobulinau savo jau įgytas kompetencijas, kruopštų darbą su dokumentacija ir gebėjimą pastebėti smulkmenas. Taip pat lavinau efektyvų komandinį darbą ir strateginį darbo planavimą, nes tikslumas ir išankstinis planavimas yra pagrindiniai veiksniai, užtikrinantys sėkmę.',
+    workskill6: 'Studijuodama šioje srityje išmokau savarankiškai ieškoti reikalingos dokumentacijos, sekti naujienas bei nuolat tobulėti kaip specialistė. Kadangi mokesčių sistema sparčiai keičiasi, gebėjimas prisitaikyti ir neatsilikti nuo naujovių yra itin svarbus.',
+    workskill7: 'Mokydamasi įgijau vertingų įgūdžių, kurie skatino žingeidumą, plačią pasaulėžiūrą ir atvirumą naujovėms. Aukšti mokyklos standartai bei griežta disciplina padėjo tvirtai išsiugdyti šias savybes ir pasiekti užsibrėžtų tikslų.',
     pro: "Šiame puslapyje noriu pasidalinti savo sukurtais projektais ir tinklalapiais, kuriuos kūriau pasitelkdama sukauptas žinias. Kviečiu įvertinti, išbandyti ir patirti malonią naršymo patirtį.",
     pro1: "Sukūriau žaidimą „Pakaruoklis“, įkvėptą siaubo filmo „Pjūklas“. Naudojau React biblioteką, o rezultatai yra saugomi LocalStorage, kad žaidėjai galėtų sekti savo pasiekimus. Žaidimo dizainas yra responsyvus, todėl jį galima patogiai žaisti tiek kompiuteryje, tiek mobiliuosiuose įrenginiuose. Norėdami pradėti žaidimą, tiesiog spustelėkite nuorodą ir mėgaukitės iškart.",
     pro2: "",
-    //       pro3: 'Excellent problem-solving skills, with the ability to tackle challenges and deliver innovative solutions.
-    // Strong communication and teamwork skills, passionate about sharing knowledge and working collaboratively to achieve project goals.
-    // Ability to read and understand electronic schematics and datasheets to effectively interface software with hardware components.
-    // Knowledge of modern software development in the web application field.
-    // Initial experience with web app frameworks (such as Angular, React, or Vue).
-    // Knowledge of the most important technologies used by us or an interest to learn.
-    // Knowledge about APIs and Integrations of B2B applications like Salesforce – nice to have.
-    // Structured, analytical, and responsible working style.
-    // An open and friendly personality who enjoys working with colleagues as a part of the team.
-    // Good English language skills.
-    // nhance trading and research processes by leveraging and improving our proprietary infrastructure
-    // Evaluate new technologies and suggest fundamental improvements to our technology stack
-    // Good English language skills;
-    // Attention to detail and a passion for writing clean, maintainable code;
-    // Excellent problem-solving and analytical skills;
-    // Ability to work independently and as part of a team, with excellent communication skills.',
-    //       pro4: '',
-    //       pro5: 'Šiame darbe išmokau komandinio darbo, bendradarbiavimo.',
-    //       pro6: 'Išmokau vadovauti komandai, būti lyderiu, o ne viršininku, parodyti, kad visi diekiame vieno tikslo, einame greta.',
   },
 };
 

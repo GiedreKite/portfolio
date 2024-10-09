@@ -39,6 +39,7 @@ const Work = () => {
             </div>
             <div className={ style.timelineRight }>
               <p>{ translations[language].work2 }</p>
+              <p>{ translations[language].workskill }</p>
             </div>
             <span className={ style.timelineCircle }></span>
           </div>
@@ -52,6 +53,7 @@ const Work = () => {
             </div>
             <div className={ style.timelineRight }>
               <p>{ translations[language].work3 }</p>
+              <p>{ translations[language].workskill1 }</p>
             </div>
             <span className={ style.timelineCircle }></span>
           </div>
@@ -65,6 +67,7 @@ const Work = () => {
             </div>
             <div className={ style.timelineRight }>
               <p>{ translations[language].work5 }</p>
+              <p>{ translations[language].workskill5 }</p>
             </div>
             <span className={ style.timelineCircle }></span>
           </div>
@@ -78,6 +81,7 @@ const Work = () => {
             </div>
             <div className={ style.timelineRight }>
               <p>{ translations[language].work7 }</p>
+              <p>{ translations[language].workskill2 }</p>
             </div>
             <span className={ style.timelineCircle }></span>
           </div>
@@ -92,6 +96,7 @@ const Work = () => {
             </div>
             <div className={ style.timelineRight }>
               <p>{ translations[language].work8 }</p>
+              <p>{ translations[language].workskill4 }</p>
             </div>
             <span className={ style.timelineCircle }></span>
           </div>

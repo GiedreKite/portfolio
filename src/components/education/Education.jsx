@@ -38,6 +38,7 @@ const Education = () => {
               <p>{ translations[language].edu1 }
                 <Link to="/project" className={ style.link }>   { translations[language].projects }</Link>
               </p>
+              <p> { translations[language].workskill3 } </p>
             </div>
             <span className={ style.timelineCircle }></span>
           </div>
@@ -50,6 +51,7 @@ const Education = () => {
             </div>
             <div className={ style.timelineRight }>
               <p>{ translations[language].edu2 }</p>
+              <p> { translations[language].workskill6 } </p>
             </div>
             <span className={ style.timelineCircle }></span>
           </div>
@@ -62,6 +64,7 @@ const Education = () => {
             </div>
             <div className={ style.timelineRight }>
               <p>{ translations[language].edu3 }</p>
+              <p> { translations[language].workskill7 } </p>
             </div>
             <span className={ style.timelineCircle }></span>
           </div>

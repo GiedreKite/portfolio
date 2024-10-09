@@ -49,6 +49,7 @@ html {
 .card {
   height: 38rem;
   width: 28rem;
+  margin: 2rem;
 
   position: relative;
 
