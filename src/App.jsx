@@ -25,7 +25,7 @@ export default function App() {
         <BrowserRouter>
           <Routes>
 
-            <Route path='/portfolioEng/' element={ <MainPage /> }></Route>
+            <Route path='/portfolioEng/*' element={ <MainPage /> }></Route>
             <Route path='/portfolioEng/contact' element={ <Contact /> }></Route>
 
             <Route path='/portfolioEng/about' element={ <About /> }></Route>
