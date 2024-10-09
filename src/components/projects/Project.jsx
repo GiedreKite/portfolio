@@ -9,6 +9,7 @@ import Photo from '../photo/Photo.jsx';
 import hangmen from './hangmen.svg';
 import playGame from './playGame.jpg';
 import hangGame from './hangGame.png';
+import Footer from '../footer/Footer.jsx';
 
 // import photo from './photo.jpg'
 
@@ -117,7 +118,9 @@ export default function Project() {
 
          </div>
 
+
       </main>
+      <Footer />
 
 
    </>
